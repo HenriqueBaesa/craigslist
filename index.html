@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
+
+    <script defer src="script.js"></script>
+
+    <title>Craigslist - Product</title>
+</head>
+
+<body>
+    <header class="menu-principal">
+        <div class="logo">
+            <img src="./img/logoCraig.png" height="95" />
+        </div>
+        <ul class="menu-s">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">SAFETY</a></li>
+            <li><a href="#">CAREERS</a></li>
+            <li><a href="#">ABUSE</a></li>
+        </ul>
+        <span class="material-symbols-outlined"><a href="#">account_circle</a></span>
+        <div class="buttons">
+            <button class="bt-post"><a href="#">POST AN AD</a></button>
+
+            <div class="dropdown">
+                <button class="bt-drop">ENGLISH</button>
+                <div class="dropdown-content">
+                    <a href="#">PORTUGUÊS</a>
+                    <a href="#">ESPANHOL</a>
+                    <a href="#">CHINÊS</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body-wrapper"></div>
+
+    <!-- container com os itens principais - Henrique -->
+    <main class="item">
+
+        <!-- fotos do produto - Henrique -->
+        <section class="img">
+            <button class="img-main__btnlft img-main__btn">
+                <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
+                </svg>
+            </button>
+            <label  class="control prev control-2">‹</label>
+            <label  class="control next control-3">›</label>
+            <button class="img-main__btn img-main__btnrgt ">
+                <img src="img/icon-next.svg" alt="next symbol image" class="img-main__btnrgt-img img-main__btn-img" />
+            </button>
+            <img src="img/image-product-1.jpg" alt="" class="img-main" />
+            <div class="img-btns">
+                <button class="img-btn">
+                    <img src="img/image-product-1.jpg" alt="shoe product image" class="img-btn__img" />
+                </button>
+                <button class="img-btn">
+                    <img src="img/image-product-2.jpg" alt="shoe product image" class="img-btn__img" />
+                </button>
+                <button class="img-btn">
+                    <img src="img/image-product-3.jpg" alt="shoe product image" class="img-btn__img" />
+                </button>
+                <button class="img-btn">
+                    <img src="img/image-product-4.jpg" alt="shoe product image" class="img-btn__img" />
+                </button>
+            </div>
+        </section>
+
+        <!-- dados do produto - Henrique -->
+        <section class="price">
+            <h2 class="price-sub__heading">Brunin da ZN</h2>
+            <h1 class="price-main__heading">Tênis Vans número 40</h1>
+            <p class="price-txt">
+                Esse tênis bonitão da Vans original tá 0 bala.
+                Meu filho usou só por dois meses, mas sabe como
+                é criança né, o pé não para de crescer. Pode vir
+                retirar ou levo em qualquer estação da linha azul
+                se pagar a minha passagem.
+            </p>
+            <div class="price-box">
+                <div class="price-box__main">
+                    <span class="price-box__main-new">R$125.00</span>
+                    <span class="price-box__main-discount"> 50%</span>
+                </div>
+                <span class="price-box__old">R$250.00</span>
+            </div>
+            <button class="price-cart__btn btn--green">
+                Contact Seller
+            </button>
+            </div>
+        </section>
+    </main>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-box">
+                <div class="company-footer">
+                    <h2>Mapa do site</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">Quem somos?</a>
+                        </li>
+                        <li>
+                            <a href="#">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-box">
+                <div class="contact-footer">
+                    <h2>Precisa de ajuda?</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">Fale conosco</a>
+                        </li>
+                        <li>
+                            <a href="#">Chat online</a>
+                        </li>
+                        <li>
+                            <a href="#">E-mail</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-box">
+                <div class="contact-footer">
+                    <h2>Siga-nos nas redes sociais</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrapper">
+                <img src="./img/logoCraig.png" class="center" alt="Craigslist logo" width="140" height="100">
+                <p class="copy">Copyright© 2022 F1-AW1. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
