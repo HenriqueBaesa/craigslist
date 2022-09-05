@@ -10,7 +10,7 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
 
-}
+} 
 
 html {
   font-size: 62.5%;
@@ -669,3 +669,69 @@ footer .wrapper:after {
 .copy {
   padding-left: 20px;
 }
+
+.search-section {
+  text-align: center;
+  background-color: lightgray;
+  border-top: 5px solid darkgray;
+}
+
+.search-title {
+  font-size: medium;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.search-container input[type=text]  {
+  padding: 6px 8px 8px;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-container button {
+  float: center;
+  padding: 6px 8px 11px;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+  background: #FCFCFC;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.nav li {
+  display: inline-block;
+  padding: 2px 8px 6px;
+  margin-top: 25px;
+  margin-right: 8px;
+  margin-bottom: 25px;
+  background-color: #FCFCFC;
+  color: #000000;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #45A545;
+}
+
+.nav a:hover {
+  text-decoration: none;
+}
+
+.nav li:hover {
+  background-color: black;
+}
+
+
+
+
