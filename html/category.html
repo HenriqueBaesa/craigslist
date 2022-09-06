@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
+
+    <script defer src="../js/script.js"></script>
+
+    <title>Craigslist - Category</title>
+
+</head>
+
+<body>
+    <header class="menu-principal">
+        <div class="logo">
+            <a href="./home.html"><img src="../img/logoCraig.png" height="95" /></a>
+        </div>
+        <ul class="menu-s">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">SAFETY</a></li>
+            <li><a href="#">CAREERS</a></li>
+            <li><a href="#">ABUSE</a></li>
+        </ul>
+        <span class="material-symbols-outlined"><a href="#">account_circle</a></span>
+        <div class="buttons">
+            <button class="bt-post"><a href="#">POST AN AD</a></button>
+
+            <div class="dropdown">
+                <button class="bt-drop">ENGLISH</button>
+                <div class="dropdown-content">
+                    <a href="#">PORTUGUÊS</a>
+                    <a href="#">ESPANHOL</a>
+                    <a href="#">CHINÊS</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="box">
+        <div class="title">
+            <h1 aria-level="2">Categories</h1>
+        </div>
+        <ul class="options">
+            <li class="opt a"><a href="#">All Categories</a></li>
+            <li class="opt pri"><a href="#">For Sale</a></li>
+            <li class="opt a"><a href="#Automóveis">Para casa</a></li>
+            <li class="opt a"><a href="#Automóveis">Automóveis</a></li>
+            <li class="opt a"><a href="#Eletrodomésticos">Eletrodomésticos</a></li>
+            <li class="opt a"><a href="#Informática">Informática</a></li> 
+            <li class="opt a"><a href="#Esportes">Esportes</a></li>
+            <li class="opt a"><a href="#Moda e Beleza">Moda e Beleza</a></li>    
+            <li class="opt a"><a href="#Brinquedos">Brinquedos</a></li>
+            <li class="opt a"><a href="#Leitura">Leitura</a></li>
+            <li class="opt a"><a href="#More">+ More</a></li>
+        </ul>
+        <div class="filter-price">
+            <p>Price</p>
+            <form>
+
+                <label data-unit="R$" class="c-product-feed-filters__option-field -price"> de </label>
+                <input type="" name="price_min" pattern="\d*" data-test="input-preco-de" placeholder="R$" class="o-input">
+                <label data-unit="R$" class="c-product-feed-filters__option-field -price"> até </label>
+                <input type="" name="price_max" pattern="\d*" data-test="input-preco-de" placeholder="R$" class="o-input">
+            </form>
+        </div>
+        <!--div class="check">
+            <select>
+                <option ></option>
+            </select>
+        </div-->
+
+
+    </div>
+</body>

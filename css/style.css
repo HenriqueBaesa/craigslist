@@ -770,5 +770,62 @@ footer .wrapper:after {
   padding-right: 10px;
 }
 
+.box{
+  border: 1px solid #f1efed;
+  background-color: #f1efed;
+  border-radius: 30px;
+  border: 3px solid darkgray;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 14px !important;
+  width:13%;
+  height: 80%;
+  
+}
 
+.options{
+  list-style-type: none;
+}
 
+.options a{
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0px;
+  font-size: 16px;
+}
+
+.options li{
+  padding: 8px;
+}
+.opt.a a:hover{
+  color:#68707d;
+}
+
+.opt.a{
+  margin-left: 15px;
+}
+
+.pri{
+  font-weight: bold;
+} 
+
+.opt hr{
+  margin: 0%;
+  padding: 0%;
+  border-radius: 30px;
+  background-color:#807b7b;
+  height: 15px;
+  width: 100%;
+}
+
+.o-input{
+  width:60px;
+}
+
+.filter-price p{
+  margin-left: 10px;
+  padding-top: 35px;
+  font-size: 16px;
+  font-weight: bold;
+}
