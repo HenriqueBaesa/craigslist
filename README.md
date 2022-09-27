@@ -2,6 +2,8 @@
 
 Projeto sendo desenvolvido na branch "junto" para a disciplina de AW1.
 
+Site original: craigslist.org
+
 Link para documento de acompanhamento de projeto: https://docs.google.com/document/d/1vxLsAQo76fVJVMMCfhm4FHH3wBDNxcdqmsj22w0UOJY/edit?usp=sharing
 
 
