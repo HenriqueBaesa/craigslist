@@ -776,14 +776,14 @@ footer .wrapper:after {
   background-color: #ffffff;
   border-radius: 30px;
   position: absolute;
-  top: 25%;
+  top: 47%;
   text-align: left;
   border: 2px solid darkgray;
   margin-top: 0px;
   margin-left: 40px;
   padding: 14px !important;
   width: 13%;
-  height: 80%;
+  height: 251%;
 
 }
 
@@ -890,13 +890,16 @@ footer .wrapper:after {
 .item-filter{
   border: 1px solid black;
   border-radius: 30px;
+  margin-bottom:12px;
+  margin-left: 40px;
   width: 200px;
   height: 270px;
 }
 
 .products-area{
-  background-color: whte;
-  top:40%;
+  background-color: white;
+  top: 120%;
+  height: 100%;
   left: 25%;
   position: absolute;
 }
@@ -910,7 +913,23 @@ footer .wrapper:after {
   transition: transform .5s;
 }
 
-
+.products-filtr{
+  display: inline-block;
+  text-align: center;
+  float:right;
+}
+.products-filtrados{
+  display: inline-block;
+  float:right;
+  text-align: center;
+  
+}
+.products-filt{
+  display: inline-block;
+  float:right;
+  text-align: center;
+  
+}
 
 
 
