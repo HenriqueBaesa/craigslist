@@ -46,37 +46,40 @@
     </header>
     <div class="body-wrapper"></div>
 
+
+
     <!-- container com os itens principais - Henrique -->
     <main class="item">
 
         <!-- fotos do produto - Henrique -->
-        <section class="img">
-            <button class="img-main__btnlft img-main__btn">
-                <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
-                </svg>
-            </button>
-            <label  class="control prev control-2">‹</label>
-            <label  class="control next control-3">›</label>
-            <button class="img-main__btn img-main__btnrgt ">
-                <img src="img/icon-next.svg" alt="next symbol image" class="img-main__btnrgt-img img-main__btn-img" />
-            </button>
-            <img src="../img/image-product-1.jpg" alt="" class="img-main" />
-            <div class="img-btns">
-                <button class="img-btn">
-                    <img src="../img/image-product-1.jpg" alt="shoe product image" class="img-btn__img" />
-                </button>
-                <button class="img-btn">
-                    <img src="../img/image-product-2.jpg" alt="shoe product image" class="img-btn__img" />
-                </button>
-                <button class="img-btn">
-                    <img src="../img/image-product-3.jpg" alt="shoe product image" class="img-btn__img" />
-                </button>
-                <button class="img-btn">
-                    <img src="../img/image-product-4.jpg" alt="shoe product image" class="img-btn__img" />
-                </button>
+                <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- imagens -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="../img/image-product-1.jpg" alt="tênis vans" style="width:100%">
             </div>
-        </section>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="../img/image-product-2.jpg" alt="tênis vans" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="../img/image-product-3.jpg" alt="tênis vans" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="../img/image-product-4.jpg" alt="tênis vans" style="width:100%">
+            </div>
+        
+            <!-- botoes de antes e dps - henrique -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
 
         <!-- dados do produto - Henrique -->
         <section class="price">
@@ -101,6 +104,19 @@
             </button>
             </div>
         </section>
+
+
+        <br>
+        
+        <!-- pontinhos invisiveis pq ainda n consegui fazer ficar bonito - henrique -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div> 
+
+        
     </main>
     </div>
     <footer>
