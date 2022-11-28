@@ -16,6 +16,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
 
     <script defer src="../js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV *").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
 
     <title>Craigslist</title>
 </head>
@@ -23,7 +36,7 @@
 <body>
     <header class="menu-principal">
         <div class="logo">
-            <img src="../img/logoCraig.png" height="95" />
+            <a href="home.html"><img src="../img/logoCraig.png" height="95" /></a>
         </div>
         <ul class="menu-s">
             <li><a href="#">FAQ</a></li>
@@ -46,81 +59,89 @@
         </div>
     </header>
 
-
-    <div class ="search-section">
-        <div class="search-title"><h1>Faça sua busca</h1></div>
+    <div class="search-section">
+        <div class="search-title">
+            <h1>Faça sua busca</h1>
+        </div>
 
         <div class="search-container">
             <form action="/action_page.php">
-              <input type="text" placeholder="Estou procurando por..." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
+                <input id="myInput" type="text" placeholder="Estou procurando por..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
             </form>
-          </div>
+        </div>
 
         <div class="search-categories">
             <ul class="nav">
                 <li><a href="#Automóveis">Para casa</a></li>
                 <li><a href="#Automóveis">Automóveis</a></li>
                 <li><a href="#Eletrodomésticos">Eletrodomésticos</a></li>
-                <li><a href="#Informática">Informática</a></li> 
+                <li><a href="#Informática">Informática</a></li>
                 <li><a href="#Esportes">Esportes</a></li>
                 <li><a href="#Moda e Beleza">Moda e Beleza</a></li>
                 <li><a href="#Brinquedos">Brinquedos</a></li>
                 <li><a href="#Leitura">Leitura</a></li>
-              </ul>
+            </ul>
         </div>
     </div>
+    <div id="myDIV">
+        <div class="products-container">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="product.html"><img src="../img/red.png" alt="" class="grid-img-item"></a>
+                    <a href="product.html"><h3 class="grid-item-title">Beats EP</h3></a>
+                    <div class="grid-item-price">
+                        <span>R$600.00</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/monza.PNG" alt="Chevrolet Monza" class="grid-img-item">
+                    <h3 class="grid-item-title">Chevrolet Monza 1993</h3>
+                    <div class="grid-item-price">
+                        <span>R$17.000</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/Kukri.jpg" alt="Kukri Nepalês" class="grid-img-item">
+                    <h3 class="grid-item-title">Faca Kukri Nepalês</h3>
+                    <div class="grid-item-price">
+                        <span>R$110.00</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/image-product-4.jpg" alt="Tênis Vans" class="grid-img-item">
+                    <h3 class="grid-item-title">Tênis Vans</h3>
+                    <div class="grid-item-price">
+                        <span>R$125.00</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/dados.jpg" alt="Kit dados RPG" class="grid-img-item">
+                    <h3 class="grid-item-title">Kit completo<br>dados metálicos</h3>
+                    <div class="grid-item-price">
+                        <span>R$100.00</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/giyuukatana.jpg" alt="Katana de Tomioka Giyuu" class="grid-img-item">
+                    <h3 class="grid-item-title">Demon Slayer Katana<br>Tomioka Giyuu</h3>
+                    <div class="grid-item-price">
+                        <span>R$230.00</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/lollo.PNG" alt="Lollo" class="grid-img-item">
+                    <h3 class="grid-item-title">Lollo (chocolate)</h3>
+                    <div class="grid-item-price">
+                        <span>R$5.00</span>
+                    </div>
+                </div>
 
-    <div class="products-container">
-        <div class="grid-container">
-            <div class="grid-item">
-                <img src="../img/monza.PNG" alt="Chevrolet Monza" class="grid-img-item">
-                <h3 class="grid-item-title">Chevrolet Monza 1993</h3>
-                <div class="grid-item-price">
-                    <span>R$17.000</span>
-                </div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
             </div>
-            <div class="grid-item">
-                <img src="../img/Kukri.jpg" alt="Kukri Nepalês" class="grid-img-item">
-                <h3 class="grid-item-title">Faca Kukri Nepalês</h3>
-                <div class="grid-item-price">
-                    <span>R$110.00</span>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="../img/image-product-4.jpg" alt="Tênis Vans" class="grid-img-item">
-                <h3 class="grid-item-title">Tênis Vans</h3>
-                <div class="grid-item-price">
-                    <span>R$125.00</span>
-                </div>
-            </div>  
-            <div class="grid-item">
-                <img src="../img/dados.jpg" alt="Kit dados RPG" class="grid-img-item">
-                <h3 class="grid-item-title">Kit completo<br>dados metálicos</h3>
-                <div class="grid-item-price">
-                    <span>R$100.00</span>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="../img/giyuukatana.jpg" alt="Katana de Tomioka Giyuu" class="grid-img-item">
-                <h3 class="grid-item-title">Demon Slayer Katana<br>Tomioka Giyuu</h3>
-                <div class="grid-item-price">
-                    <span>R$230.00</span>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="../img/lollo.PNG" alt="Lollo" class="grid-img-item">
-                <h3 class="grid-item-title">Lollo (chocolate)</h3>
-                <div class="grid-item-price">
-                    <span>R$5.00</span>
-                </div>
-            </div>  
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>  
-          </div>
+        </div>
     </div>
-
     <footer>
         <div class="wrapper">
             <div class="footer-box">
