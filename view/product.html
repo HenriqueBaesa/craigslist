@@ -15,6 +15,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
 
     <script defer src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
 
     <title>Craigslist - Product</title>
 </head>
@@ -48,77 +50,75 @@
 
 
 
-    <!-- container com os itens principais - Henrique -->
-    <main class="item">
+    <!-- container com os itens principais - Baesa -->
+    <main class="container">
 
-        <!-- fotos do produto - Henrique -->
-                <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- imagens -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="../img/image-product-1.jpg" alt="tênis vans" style="width:100%">
-            </div>
-        
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="../img/image-product-2.jpg" alt="tênis vans" style="width:100%">
-            </div>
-        
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="../img/image-product-3.jpg" alt="tênis vans" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                <img src="../img/image-product-4.jpg" alt="tênis vans" style="width:100%">
-            </div>
-        
-            <!-- botoes de antes e dps - henrique -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- coluna da esquerda e imagem do produto - Baesa -->
+        <div class="left-column">
+            <img data-image="black" src="../img/black.png" alt="">
+            <img data-image="blue" src="../img/blue.png" alt="">
+            <img data-image="red" class="active" src="../img/red.png" alt="">
         </div>
-
-        <!-- dados do produto - Henrique -->
-        <section class="price">
-            <h2 class="price-sub__heading">Brunin da ZN</h2>
-            <h1 class="price-main__heading">Tênis Vans número 40</h1>
-            <p class="price-txt">
-                Esse tênis bonitão da Vans original tá 0 bala.
-                Meu filho usou só por dois meses, mas sabe como
-                é criança né, o pé não para de crescer. Pode vir
-                retirar ou levo em qualquer estação da linha azul
-                se pagar a minha passagem.
-            </p>
-            <div class="price-box">
-                <div class="price-box__main">
-                    <span class="price-box__main-new">R$125.00</span>
-                    <span class="price-box__main-discount"> 50%</span>
+    
+    
+        <!-- coluna da direita - Baesa -->
+        <div class="right-column">
+    
+            <!-- descrição do produto - Baesa -->
+            <div class="product-description">
+            <span>Fones</span>
+            <h1>Beats EP</h1>
+            <p>A escolha preferida de uma vasta gama de DJs aclamados. Som forte e focado nos graves e alto isolamento. Faixa de cabeça resistente e almofadas auriculares adequadas para apresentações ao vivo</p>
+            </div>
+    
+            <!-- customizações do produto - Baesa -->
+            <div class="product-configuration">
+    
+            <!-- seleção da cor - Baesa -->
+            <div class="product-color">
+                <span>Cor</span>
+    
+                <div class="color-choose">
+                <div>
+                    <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                    <label for="red"><span></span></label>
                 </div>
-                <span class="price-box__old">R$250.00</span>
+                <div>
+                    <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                    <label for="blue"><span></span></label>
+                </div>
+                <div>
+                    <input data-image="black" type="radio" id="black" name="color" value="black">
+                    <label for="black"><span></span></label>
+                </div>
+                </div>
+    
             </div>
-            <button class="price-cart__btn btn--green">
-                Contact Seller
-            </button>
+    
+            <!-- seleção do cabo - Baesa -->
+            <div class="cable-config">
+                <span>Tipo de cabo</span>
+    
+                <div class="cable-choose">
+                <button>Reto</button>
+                <button>Espiral curto</button>
+                <button>Espiral longo</button>
+                </div>
+    
             </div>
-        </section>
-
-
-        <br>
-        
-        <!-- pontinhos invisiveis pq ainda n consegui fazer ficar bonito - henrique -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div> 
-
-        
-    </main>
+            </div>
+    
+            <!-- valor do produto - Baesa -->
+            <div class="product-price">
+            <span>R$600</span>
+            <a href="#" class="cart-btn">Comprar</a>
+            </div>
+        </div>     
     </div>
+    </main>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+
     <footer>
         <div class="wrapper">
             <div class="footer-box">
