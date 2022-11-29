@@ -1003,14 +1003,14 @@ a:visited { text-decoration: none; color:black; }
   background-color: #ffffff;
   border-radius: 30px;
   position: absolute;
-  top: 47%;
+  top: 20%;
   text-align: left;
   border: 2px solid darkgray;
   margin-top: 0px;
   margin-left: 40px;
   padding: 14px !important;
   width: 15%;
-  height: 251%;
+
 
 }
 
@@ -1125,10 +1125,9 @@ a:visited { text-decoration: none; color:black; }
 
 .products-area{
   background-color: white;
-  top: 120%;
-  height: 100%;
-  left: 25%;
-  position: absolute;
+  display: flex;
+  justify-content: center;
+
 }
 
 .item-filter>img {
@@ -1145,6 +1144,7 @@ a:visited { text-decoration: none; color:black; }
   text-align: center;
   float:right;
 }
+
 .products-filtrados{
   display: inline-block;
   float:right;
@@ -1229,4 +1229,159 @@ a:visited { text-decoration: none; color:black; }
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Dany - página FAQ*/
+
+
+.titlef{
+  font-size: 2.5rem;
+  color: #373d51;
+  padding: 1.3rem;
+  margin: 0;
+}
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 2rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #45A545;
+}
+
+.accordion a:hover::after {
+  border: 1px solid #45A545;
+}
+
+.accordion a.active {
+  color: #45A545;
+  border-bottom: 1px solid #45A545;
+}
+
+.accordion a::after {
+
+  content: '\+';
+  position: absolute;
+  float: right;
+  right:1rem;
+  font-size: 2rem;
+  color: #7288a2;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+
+.accordion a.active::after {
+  
+  content: '\-';
+  color: #45A545;
+  border: 1px solid #45A545;
+}
+
+.accordion .content {
+  display: none;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.accordion .content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+/* Dany -  Página contato */
+.containerC {
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.30);
+
+}
+
+.containerC .con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .con .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+
+.con .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #444141;
+}
+
+.right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.right-side .message-box {
+  min-height: 110px;
+}
+
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.right-side .button input[type="submit"] {
+  color: #45A545;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgb(208, 208, 208);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button input[type="submit"]:hover {
+  background: #45A545;
+  color: #fff;
 }

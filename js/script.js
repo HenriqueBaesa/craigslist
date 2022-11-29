@@ -47,11 +47,20 @@ function showSlides(n) {
 /* Filtragem por nome do produto com Jquery - Felipe*/
 $(document).ready(function () {
   $("#myInput").on("keyup", function () {
-      var value = $(this).val().toLowerCase();
-      $("#myDIV *").filter(function () {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function () {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
   });
 });
 
+/* Animação nas perguntas - Dany */
+
+
+$(document).ready(function () {
+  $('.accordion a').click(function () {
+  $(this).toggleClass('active');
+  $(this).next('.content').slideToggle(400);
+  });
+});
 
